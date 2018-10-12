@@ -1,2 +1,2 @@
-# lzhlin.github.io
-blog
+# 书生林丶的个人博客
+欢迎访问lzlin.cn
