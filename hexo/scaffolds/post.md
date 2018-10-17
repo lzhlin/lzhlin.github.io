@@ -1,5 +1,9 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags:
+categories: 
+- Java基础篇
+- 初识Java
+tags: Java
+comments: true
 ---
