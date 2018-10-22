@@ -27,23 +27,23 @@ Java开发工具包 JDK [下载地址](https://www.oracle.com/technetwork/cn/jav
 在PATH变量中,加入`%JAVA_HOME%\bin`
 JDK1.5以上无需配置classpath
  
-{% asset_img 设置环境变量.png %}
-{% asset_img 设置环境变量2.png %}
+![](https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E5%88%9D%E8%AF%86Java/%E4%BA%86%E8%A7%A3Java/%E8%AE%BE%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png)
+![](https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E5%88%9D%E8%AF%86Java/%E4%BA%86%E8%A7%A3Java/%E8%AE%BE%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F2.png)
  <br>
  # Java是解释型语言
 JDK包括JRE和编译器调试器等用于程序开发的文件
 JRE包括JVM虚拟机,库等文件
 JVM是执行bytecode字节码的"虚拟计算机"
  
-{% asset_img JDK-JRE-JVM.png %}
+![](https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E5%88%9D%E8%AF%86Java/%E4%BA%86%E8%A7%A3Java/JDK-JRE-JVM.png)
  
 所以,若只需要运行Java程序则只需安装JRE即可.若需要开发,需下载JDK
  
  `.Java`文件通过编译器生成`.class`文件,最终通过解释器解释运行
-{% asset_img 运行过程.png %}
+![](https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E5%88%9D%E8%AF%86Java/%E4%BA%86%E8%A7%A3Java/%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B.png)
 
 根据不同的操作系统,不同的虚拟机来解释执行
-{% asset_img Java执行.png %}
+![](https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E5%88%9D%E8%AF%86Java/%E4%BA%86%E8%A7%A3Java/Java%E6%89%A7%E8%A1%8C.png)
  
  <br>
  # 简单举例
@@ -72,8 +72,9 @@ windows+r打开运行命令框,输入cmd,执行以下命令
 - Java执行class文件,需以main方法为入口,否则不可执行.
 
 <br>
-{% asset_img welcome.png %}
-{% asset_img CMD.png %}
-{% asset_img cmd运行.png %}
-{% asset_img Fpan.png %}
+![](https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E5%88%9D%E8%AF%86Java/%E4%BA%86%E8%A7%A3Java/welcome.png)
+![](https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E5%88%9D%E8%AF%86Java/%E4%BA%86%E8%A7%A3Java/cmd.png)
+![](https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E5%88%9D%E8%AF%86Java/%E4%BA%86%E8%A7%A3Java/cmd%E8%BF%90%E8%A1%8C.png)
+![](https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E5%88%9D%E8%AF%86Java/%E4%BA%86%E8%A7%A3Java/Fpan.png)
+
  
