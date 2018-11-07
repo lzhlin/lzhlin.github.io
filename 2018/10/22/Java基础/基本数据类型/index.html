@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.4.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.4.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.4.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.4.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.4.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.4.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Java是强类型语言,每个变量都需要声明其数据类型.Java数据类型可分为基本数据类型和引用数据类型. 基本数据类型数值型整数类型byte : 一个字节short : 两个字节int : 四个字节long : 八个字节     Java程序中,我们能看到的数字,默认都是int类型的,若要表示一个大额的long数,则需要加L 如: 8800000000L  浮点类型float : 四个字节 -3.4">
+<meta name="keywords" content="Java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基本数据类型">
+<meta property="og:url" content="http://yoursite.com/2018/10/22/Java基础/基本数据类型/index.html">
+<meta property="og:site_name" content="天南私塾">
+<meta property="og:description" content="Java是强类型语言,每个变量都需要声明其数据类型.Java数据类型可分为基本数据类型和引用数据类型. 基本数据类型数值型整数类型byte : 一个字节short : 两个字节int : 四个字节long : 八个字节     Java程序中,我们能看到的数字,默认都是int类型的,若要表示一个大额的long数,则需要加L 如: 8800000000L  浮点类型float : 四个字节 -3.4">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E5%88%9D%E8%AF%86Java/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E6%95%B4%E6%95%B0%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png">
+<meta property="og:image" content="https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E5%88%9D%E8%AF%86Java/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E6%95%B4%E5%BD%A2%E5%B8%B8%E9%87%8F%E7%9A%84%E5%9B%9B%E7%A7%8D%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F.png">
+<meta property="og:image" content="https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E5%88%9D%E8%AF%86Java/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6.png">
+<meta property="og:updated_time" content="2018-11-07T23:14:09.355Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="基本数据类型">
+<meta name="twitter:description" content="Java是强类型语言,每个变量都需要声明其数据类型.Java数据类型可分为基本数据类型和引用数据类型. 基本数据类型数值型整数类型byte : 一个字节short : 两个字节int : 四个字节long : 八个字节     Java程序中,我们能看到的数字,默认都是int类型的,若要表示一个大额的long数,则需要加L 如: 8800000000L  浮点类型float : 四个字节 -3.4">
+<meta name="twitter:image" content="https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E5%88%9D%E8%AF%86Java/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E6%95%B4%E6%95%B0%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/10/22/Java基础/基本数据类型/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>基本数据类型 | 天南私塾</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">天南私塾</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">欢迎交流学习</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">3</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">1</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">9</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/22/Java基础/基本数据类型/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="书生林丶">
+      <meta itemprop="description" content="个人博客">
+      <meta itemprop="image" content="/images/scholar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="天南私塾">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">基本数据类型
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-10-22 17:34:13" itemprop="dateCreated datePublished" datetime="2018-10-22T17:34:13+08:00">2018-10-22</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-11-08 07:14:09" itemprop="dateModified" datetime="2018-11-08T07:14:09+08:00">2018-11-08</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Java基础篇/" itemprop="url" rel="index"><span itemprop="name">Java基础篇</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Java基础篇/初识Java/" itemprop="url" rel="index"><span itemprop="name">初识Java</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/10/22/Java基础/基本数据类型/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/10/22/Java基础/基本数据类型/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/10/22/Java基础/基本数据类型/" class="leancloud_visitors" data-flag-title="基本数据类型">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Java是强类型语言,每个变量都需要声明其数据类型.<br>Java数据类型可分为基本数据类型和引用数据类型.</p>
+<h1 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h1><h2 id="数值型"><a href="#数值型" class="headerlink" title="数值型"></a>数值型</h2><h3 id="整数类型"><a href="#整数类型" class="headerlink" title="整数类型"></a>整数类型</h3><p><code>byte</code> : 一个字节<br><code>short</code> : 两个字节<br><code>int</code> : 四个字节<br><code>long</code> : 八个字节</p>
+<p><img src="https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E5%88%9D%E8%AF%86Java/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E6%95%B4%E6%95%B0%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png" alt=""></p>
+<p><img src="https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E5%88%9D%E8%AF%86Java/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E6%95%B4%E5%BD%A2%E5%B8%B8%E9%87%8F%E7%9A%84%E5%9B%9B%E7%A7%8D%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F.png" alt=""></p>
+<blockquote>
+<p> Java程序中,我们能看到的数字,默认都是int类型的,若要表示一个大额的long数,则需要加L 如: <code>8800000000L</code></p>
+</blockquote>
+<h3 id="浮点类型"><a href="#浮点类型" class="headerlink" title="浮点类型"></a>浮点类型</h3><p><code>float</code> : 四个字节 -3.403E38~3.403E38<br><code>double</code>  : 八个字节 -1.798E308~1.798E308</p>
+<p>浮点型的表示形式</p>
+<p>十进制数形式:  <code>3.14</code>  <code>314.0</code> <code>0.314</code></p>
+<p>科学计数法: <code>314E-2</code> <code>312e2</code> <code>314E2</code></p>
+<blockquote>
+<p>E2 表示 10^2 十的平方</p>
+</blockquote>
+<p>Java中的浮点类型默认是double,想要表示一个float类型的值时,需要加F/f  如:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">float</span> f = <span class="number">3.14F</span>;</span><br><span class="line"><span class="keyword">double</span> d1 = <span class="number">3.14</span>;</span><br><span class="line"><span class="keyword">double</span> d2 = <span class="number">3.14</span>D;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>浮点类型不适合在不允许有误差的金融领域计算.<br>如需要无误差的精准计算,需要用到BigDecimal类.</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">float</span> f = <span class="number">0.1f</span>;</span><br><span class="line"><span class="keyword">double</span> d = <span class="number">1.0</span>/<span class="number">10</span>;</span><br><span class="line">System.out.println(f==d); <span class="comment">//结果为false</span></span><br><span class="line">		</span><br><span class="line"><span class="keyword">float</span> f1 = <span class="number">45678900f</span>;</span><br><span class="line"><span class="keyword">float</span> f2 = f1 + <span class="number">1</span>;</span><br><span class="line">System.out.println(f1==f2);<span class="comment">//结果为true</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>浮点数值不精确,不能用于比较</p>
+</blockquote>
+<h2 id="字符型"><a href="#字符型" class="headerlink" title="字符型"></a>字符型</h2><p><code>char</code> : 两个字节</p>
+<p>char类型用来表示在Unicode编码表中的字符.可允许65536个字符.</p>
+<p>Unicode具有从0到65535之间的编码,他们通常从 <code>\u0000</code>到<code>\uFFFF</code>之间的十六进制值来镖师.(u表示Unicode)</p>
+<blockquote>
+<p>java中生命char用单引号 如 <code>char c = &#39;a&#39;</code><br>String是字符串,也就是字符序列,由字符组成.用双引号<br>‘A’是一个字符,而”A”是指含有一个字符的字符串</p>
+</blockquote>
+<p><img src="https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E5%88%9D%E8%AF%86Java/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6.png" alt=""></p>
+<h2 id="布尔型"><a href="#布尔型" class="headerlink" title="布尔型"></a>布尔型</h2><p><code>boolean</code> : 一位</p>
+<p>boolean类型有两个常量值,<code>true</code>和<code>false</code>,在内存中占一位(不是一个字节),不可以使用0和非0来代替,通常用于逻辑判断.</p>
+<h1 id="引用数据类型-四个字节"><a href="#引用数据类型-四个字节" class="headerlink" title="引用数据类型(四个字节)"></a>引用数据类型(四个字节)</h1><h2 id="类"><a href="#类" class="headerlink" title="类"></a>类</h2><h2 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h2><h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Java/" rel="tag"># Java</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/18/Java基础/变量与常量/" rel="next" title="变量与常量">
+                <i class="fa fa-chevron-left"></i> 变量与常量
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/scholar.jpeg"
+                alt="书生林丶" />
+            
+              <p class="site-author-name" itemprop="name">书生林丶</p>
+              <p class="site-description motion-element" itemprop="description">个人博客</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#基本数据类型"><span class="nav-number">1.</span> <span class="nav-text">基本数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数值型"><span class="nav-number">1.1.</span> <span class="nav-text">数值型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#整数类型"><span class="nav-number">1.1.1.</span> <span class="nav-text">整数类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#浮点类型"><span class="nav-number">1.1.2.</span> <span class="nav-text">浮点类型</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符型"><span class="nav-number">1.2.</span> <span class="nav-text">字符型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#布尔型"><span class="nav-number">1.3.</span> <span class="nav-text">布尔型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#引用数据类型-四个字节"><span class="nav-number">2.</span> <span class="nav-text">引用数据类型(四个字节)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#类"><span class="nav-number">2.1.</span> <span class="nav-text">类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#接口"><span class="nav-number">2.2.</span> <span class="nav-text">接口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组"><span class="nav-number">2.3.</span> <span class="nav-text">数组</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">书生林丶</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by"> <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a>  v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Gemini</a> v6.4.2</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.4.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.4.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.2"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'UCSObL7rfkGmahu42FUC9muT-gzGzoHsz',
+        appKey: 'i3Nqpa9IIDTMsBP7h4EJnd6M',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: true
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
