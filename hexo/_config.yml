@@ -79,5 +79,7 @@ theme: hexo-theme-next-6
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/lzhlin/lzhlin.github.io.git
+  repo: 
+    github: https://github.com/lzhlin/lzhlin.github.io.git
+    gitee: https://gitee.com/linpp/linpp.git
   branch: master
