@@ -1,5 +1,5 @@
 ---
-title: The server time zone value???
+title: 报错The server time zone value???
 categories: Mysql
 tags: Mysql
 comments: true

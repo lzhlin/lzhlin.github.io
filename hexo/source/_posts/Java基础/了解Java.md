@@ -2,7 +2,7 @@
 title: 了解Java
 date: 2018-10-16 14:41:45
 categories: 
-- Java基础篇
+- Java基础
 - 初识Java
 tags: Java
 comments: true
@@ -26,7 +26,7 @@ Java开发工具包 JDK [下载地址](https://www.oracle.com/technetwork/cn/jav
 在我的电脑属性中,点击高级系统设置,环境变量,系统变量中,  新建变量,变量名:`JAVA_HOME`,变量值为JDK安装路径
 在PATH变量中,加入`%JAVA_HOME%\bin`
 JDK1.5以上无需配置classpath
- 
+
 ![](https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E5%88%9D%E8%AF%86Java/%E4%BA%86%E8%A7%A3Java/%E8%AE%BE%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png)
 ![](https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E5%88%9D%E8%AF%86Java/%E4%BA%86%E8%A7%A3Java/%E8%AE%BE%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F2.png)
  <br>
@@ -34,25 +34,25 @@ JDK1.5以上无需配置classpath
 JDK包括JRE和编译器调试器等用于程序开发的文件
 JRE包括JVM虚拟机,库等文件
 JVM是执行bytecode字节码的"虚拟计算机"
- 
+
 ![](https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E5%88%9D%E8%AF%86Java/%E4%BA%86%E8%A7%A3Java/JDK-JRE-JVM.png)
- 
+
 所以,若只需要运行Java程序则只需安装JRE即可.若需要开发,需下载JDK
- 
+
  `.Java`文件通过编译器生成`.class`文件,最终通过解释器解释运行
 ![](https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E5%88%9D%E8%AF%86Java/%E4%BA%86%E8%A7%A3Java/%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B.png)
 
 根据不同的操作系统,不同的虚拟机来解释执行
 ![](https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E5%88%9D%E8%AF%86Java/%E4%BA%86%E8%A7%A3Java/Java%E6%89%A7%E8%A1%8C.png)
- 
+
  <br>
  # 简单举例
 如 我在F:\mycode下新建文件 `Welcome.java`
 {% codeblock Welcome.java lang:Java %}
 public class Welcome {
-	public static void main(String[] args){
-		System.out.println("I'm lpp,Hellow World");
-	}
+​	public static void main(String[] args){
+​		System.out.println("I'm lpp,Hellow World");
+​	}
 }
 
 class car {

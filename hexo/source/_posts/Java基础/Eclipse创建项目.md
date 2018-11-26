@@ -1,7 +1,7 @@
 ---
 title: Eclipse创建项目
 categories:
-  - Java基础篇
+  - Java基础
   - 初识Java
 tags: Java
 comments: true
@@ -13,7 +13,7 @@ date: 2018-10-17 11:07:05
 输入代码
 {% codeblock Welcome.java lang:Java %}
 public static void main(String[] args){
-		System.out.println("I'm sslin,HelloWorld");
+​		System.out.println("I'm sslin,HelloWorld");
 }
 {% endcodeblock %}
 
