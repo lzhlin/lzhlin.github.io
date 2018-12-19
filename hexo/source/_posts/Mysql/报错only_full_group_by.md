@@ -44,3 +44,20 @@ MySQL 5.7.5及以上功能依赖检测功能。如果启用了ONLY_FULL_GROUP_BY
 
 然后报错就没有了
 
+
+
+2018.12.20 1:30更新:
+
+数据库服务重启之后,又会出现此错误
+
+解决方式:
+
+在配置文件中mysqld里面加入:
+
+`sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION`
+
+例如,我的是windows版本的数据库, 在my.ini中加入
+
+![](https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/Mysql/%E6%8A%A5%E9%94%99only-full-group-by/sqlMode%E9%85%8D%E7%BD%AE.png)
+
+重启服务后就好了.

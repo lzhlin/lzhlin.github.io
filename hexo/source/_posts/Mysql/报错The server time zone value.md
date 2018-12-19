@@ -16,7 +16,7 @@ The server time zone value '???ú±ê×??±??'
 
 解决方案：
 
-为URL添加参数**serverTimezone=UTC**即可，这里的时区可以根据自己数据库的设定来设置（GMT/UTC ）。
+为URL添加参数**serverTimezone=CTT**即可，这里的时区可以根据自己数据库的设定来设置（GMT/UTC ）。
 
 ![](https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/Mysql/The%20server%20time%20zone%20value/mysql%E9%85%8D%E7%BD%AE.png)
 
