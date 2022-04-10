@@ -10,7 +10,7 @@ date: 2018-11-24 20:43:59
 
 ![](https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/Windows/%E9%9D%9E%E7%B3%BB%E7%BB%9F%E7%9B%98%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%87%BA%E7%8E%B0Msdia80.dll/msdia80%E6%88%AA%E5%9B%BE.png)
 
-
+<!-- more -->
 
 出现此问题的原因：计算机上安装了 Microsoft Visual C++ 2005 可再发行组件时，Msdia80.dll文件被错误安装在其他驱动器的根文件夹中。
 

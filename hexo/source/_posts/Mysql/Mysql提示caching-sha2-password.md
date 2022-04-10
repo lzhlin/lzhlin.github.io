@@ -11,7 +11,7 @@ date: 2018-11-24 21:40:21
 mysql 8.0 默认使用 caching_sha2_password 身份验证机制 —— 从原来的 mysql_native_password 更改为 caching_sha2_password。 
 从 5.7 升级 8.0 版本的不会改变现有用户的身份验证方法，但新用户会默认使用新的 caching_sha2_password 。
 
-
+<!-- more -->
 
 解决方案:
 

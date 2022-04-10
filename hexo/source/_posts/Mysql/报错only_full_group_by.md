@@ -11,6 +11,8 @@ date: 2018-11-26 00:50:24
 
 `Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 't.line_name' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by`
 
+<!-- more -->
+
 ![](https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/Mysql/%E6%8A%A5%E9%94%99only-full-group-by/%E6%8A%A5%E9%94%99.png)
 
 

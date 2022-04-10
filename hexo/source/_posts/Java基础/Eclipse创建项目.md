@@ -10,6 +10,8 @@ date: 2018-10-17 11:07:05
 鼠标右键新建java project,在SRC目录下新建类Welcome
 ![](https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E5%88%9D%E8%AF%86Java/Eclipse%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE/NEW.PNG)
 
+<!-- more -->
+
 输入代码
 {% codeblock Welcome.java lang:Java %}
 public static void main(String[] args){

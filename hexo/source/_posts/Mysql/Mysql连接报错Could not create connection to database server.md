@@ -12,6 +12,8 @@ Java项目访问数据库报错
 
 尝试连接了三次,最后放弃
 
+<!-- more -->
+
 ![](https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/Mysql/Mysql%E8%BF%9E%E6%8E%A5%E6%8A%A5%E9%94%99Could%20not%20create%20connection%20to%20database%20server/mysql.png)
 
 一开始可能认为是配置的错误,后来发现不是

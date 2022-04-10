@@ -12,6 +12,8 @@ date: 2018-11-25 10:53:35
 
 在word中,利用ODBC驱动源,OFFICE宏来控制报表输出
 
+<!-- more -->
+
 作者博客地址: 
 
 [https://blog.csdn.net/yzsind](https://blog.csdn.net/yzsind)

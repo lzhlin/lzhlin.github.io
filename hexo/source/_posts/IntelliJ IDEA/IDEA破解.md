@@ -8,6 +8,8 @@ date: 2018-11-25 20:35:06
 
 IDEA安装后
 
+<!-- more -->
+
 进入网址 [http://idea.lanyus.com](http://idea.lanyus.com)
 
 点击获取注册码

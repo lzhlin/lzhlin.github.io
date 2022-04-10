@@ -8,6 +8,8 @@ date: 2018-11-25 20:33:29
 
 MybatisPlugin插件和ledis(IDEA Redis可视化工具)默认是收费的
 
+<!-- more -->
+
 之前找到的这个破解方式,作者地址已经被封了,还好还留有破解的包,放硬盘里了
 
 ### ideaagent v1.2 (破解jar)

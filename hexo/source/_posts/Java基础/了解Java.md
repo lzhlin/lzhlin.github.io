@@ -12,6 +12,8 @@ comments: true
 - JavaEE: 企业版 定位在服务器端应用
 - JavaME: 微型版 定位在消费性电子产品应用
 
+<!-- more -->
+
 > JavaEE包含JAVASE,所以要先学JavaSE
 > JavaME不同于安卓开发,已逐步被安卓取代
 
