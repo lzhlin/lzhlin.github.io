@@ -4,8 +4,8 @@
 
 # Site
 title: 天南私塾
-subtitle: 欢迎交流学习
-description: 个人博客
+subtitle: 天行健，君子以自强不息
+description: JAVA/WEB/大数据/笔录
 keywords:
 author: 书生林丶
 language: zh-CN
@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://lzlin.cn/
+url: https://www.lzlin.cn/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -51,6 +51,11 @@ highlight:
   tab_replace:
   wrap: true
   hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''  
   
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -77,8 +82,8 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
-## Use post's date for updated date unless set in front-matter
-use_date_for_updated: false
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
