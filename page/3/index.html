@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"www.lzlin.cn","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="JAVA&#x2F;WEB&#x2F;大数据&#x2F;笔录">
+<meta property="og:type" content="website">
+<meta property="og:title" content="天南私塾">
+<meta property="og:url" content="https://www.lzlin.cn/page/3/index.html">
+<meta property="og:site_name" content="天南私塾">
+<meta property="og:description" content="JAVA&#x2F;WEB&#x2F;大数据&#x2F;笔录">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="书生林丶">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://www.lzlin.cn/page/3/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>天南私塾</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">天南私塾</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">天行健，君子以自强不息</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">6</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">8</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">21</span></a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/lzhlin" class="github-corner" title="Follow me Baby! 来了就不要着急走！" aria-label="Follow me Baby! 来了就不要着急走！" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+
+  <div class="blog-show">
+
+  </div>
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.lzlin.cn/2018/10/13/%E4%B8%AA%E4%BA%BA%E6%97%A5%E8%AE%B0/%E8%B5%B7%E7%82%B9,%E8%AE%B0%E5%BD%95%E6%88%91%E7%9A%84%E6%AF%8F%E4%B8%80%E5%88%BB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/scholar.jpeg">
+      <meta itemprop="name" content="书生林丶">
+      <meta itemprop="description" content="JAVA/WEB/大数据/笔录">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="天南私塾">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2018/10/13/%E4%B8%AA%E4%BA%BA%E6%97%A5%E8%AE%B0/%E8%B5%B7%E7%82%B9,%E8%AE%B0%E5%BD%95%E6%88%91%E7%9A%84%E6%AF%8F%E4%B8%80%E5%88%BB/" class="post-title-link" itemprop="url">起点,记录我的每一刻</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-10-13 16:57:33" itemprop="dateCreated datePublished" datetime="2018-10-13T16:57:33+08:00">2018-10-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-04-10 23:28:19" itemprop="dateModified" datetime="2022-04-10T23:28:19+08:00">2022-04-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B8%AA%E4%BA%BA%E6%97%A5%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">个人日记</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/%E8%B5%B7%E7%82%B9-%E8%AE%B0%E5%BD%95%E6%88%91%E7%9A%84%E6%AF%8F%E4%B8%80%E5%88%BB/%E5%88%9D%E9%98%B3.jpg"></p>
+<p>记得自己还很小很小的时候,我妈就说我,说我应当有个写日记的好习惯.<br>当然,她说过的还有很多很多:”你应当经常写写毛笔字,练一练书法”,”没事的时候多出去锻炼锻炼,多读书,别一天老在家玩电脑”……诸如此类等等.<br>可是他们所认为的期盼在我们耳边变成唠叨时,你有时也会不自然想,你们自己不也没有那样做吗,还非必须要求我们那样.<br><strong>“劝别人之前,最好自己先以身作则”.</strong></p>
+<p>或许是为了应付语文老师的作业,也或许有那么一段时间,我真的想记录一些琐事,坚持了不是很久.<br>每天晚上,不知道改写什么的时候,就能想起同学告诉我的窍门:”不会写,那就写天气和心情”.<br>所以,在我那个本来就不是很厚,却连一半都没有用完的很小的日记本上,成为了每天的天气预报.<br>终于,我最后选择了理科,欲要彻底摆脱写作的痛苦.不想让自己以后的日子里还会经常困扰于这些我并不是很擅长的东西.<br>事实也是如此,上了大学以后,几乎没有动过笔.可能大学经常写的字就是自己的专业以及自己的名字.<br>至于我妈说过的那句让我常写日记话,早已在耳边消失了不知多少年.</p>
+<p>很少回家.<br>从初二开始,因在这个重要的分水岭上我的成绩一落千丈,被我妈果断的送去了运城,一个在我们当地著名的学习圣地.<br>极高的录取分数线,丰厚的教学资源,优异的学习环境,有名的教师等等.<br>我妈相信在这样的圣地中,哪怕一座不是很出名的学校,也能教出高质量的水准.<br>我去了一个当时不是很好,但也不差的封闭学堂,开始了我的外地生活.<br>初中在运城,高中在运城,大学去了太谷.<br>毕业以后去了上海,再后来去了成都,最终辗转到了北京.<br>所以,除了节假日,还有一段我工作没有着落的日子里,其他时间,都不在家.这种日子已持续很久.<br>十二年.</p>
+<p><img src="https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/%E8%B5%B7%E7%82%B9-%E8%AE%B0%E5%BD%95%E6%88%91%E7%9A%84%E6%AF%8F%E4%B8%80%E5%88%BB/%E6%B5%B7%E6%B3%89%E4%B8%AD%E5%AD%A6.jpg"></p>
+<p>上次过年回家,帮着我妈打扫我爸的卧室,看到了桌子上的几个本.我以为是以前他还工作的时候用的一些旧书本.<br>我刚想问她要不要扔时,她说”那是你爸的日记本”.<br>“他自己每周都会写几篇,我也不知道他写的啥,他都不让我看”,她说.<br>我问写了多久了,我妈说不知道,一直都在写吧.<br>她说她之前也会写,坚持了挺长时间,只是后来写的少了,以至于不怎么写了,因为照顾两边的老人真的很忙.</p>
+<p>慢慢的,慢慢的,我们能发现,之前一些我们以为对的事情,后来发现他不对.<br>你所看到的,不一定是全面的.<br><strong>我认为,有的人之所以伟大,并不是他突然做出了什么惊天动地的事情来,而是哪怕再小的一件事,她可以一直坚持下去,持之以恒.</strong></p>
+<p>后来,自己慢慢就察觉到了,原来我妈的卧室里,放着一个巨大的笔架,自己几乎每次回家都会看到的,但每次都忽略的东西.<br>一根根大小不一的毛笔,旁边笔墨纸砚全部齐全,上面一尘不染.<br>老旧的CD机上,一叠叠的太极拳以及健身体操.<br>窗前的窗户上,一摞一摞的可以远远超出自己的一生所看书本的书,里面的褶皱,无不再说它们已经被人翻阅了一遍又一遍.</p>
+<p>我们这一辈的,觉得自己已经可以在外奔波,可以站住脚跟,不怕风,不怕雨,不愁吃不愁穿的,还自以为豪,其实,最缺的,就是老一辈人的信念.<br>他们把那些,他们认为应该做的事情,坚持了无数个年头,<br>而我们,总是把话说在嘴边,还找无数个理由自己骗自己.</p>
+<p><strong>我们不怕我们现在一无所有.但是我们要有自我更新的能力.</strong></p>
+<p>我决定以母亲为榜样,开始坚持做一些自己以前有过规划,却从未做到的事情.<br>比如,坚持锻炼身体.<br>比如,早睡早起.<br>比如,坚持能在加自己做饭吃,就绝不点外卖.<br>比如,看书和写字.</p>
+<p>如果将来有了自己的孩子,我肯定会像当初母亲劝导我一样劝导他.<br><strong>“劝别人之前,最好自己先以身作则”.</strong><br>如今这句话,已有了不一样的意义.</p>
+<p><img src="https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/%E8%B5%B7%E7%82%B9-%E8%AE%B0%E5%BD%95%E6%88%91%E7%9A%84%E6%AF%8F%E4%B8%80%E5%88%BB/%E5%81%A5%E8%BA%AB%E5%99%A8%E6%9D%90.jpg"><br><img src="https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/%E8%B5%B7%E7%82%B9-%E8%AE%B0%E5%BD%95%E6%88%91%E7%9A%84%E6%AF%8F%E4%B8%80%E5%88%BB/%E8%B7%91%E6%AD%A5%E8%AE%A1%E6%95%B0.png"><br><img src="https://javabasics-1257838768.cos.ap-beijing.myqcloud.com/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/%E8%B5%B7%E7%82%B9-%E8%AE%B0%E5%BD%95%E6%88%91%E7%9A%84%E6%AF%8F%E4%B8%80%E5%88%BB/%E4%B9%A6.jpg"></p>
+<p>如今,花了两天时间,才搭建好博客. <a target="_blank" rel="noopener" href="http://lzlin.cn/">lzlin.cn</a><br>终于开始可以记录日记和所学.</p>
+<p>自律,是通向幸福的必然条件.<br>不期望自己将来能做什么惊天动地的大事.<br>只希望自己可以不忘初心,持之以恒.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="书生林丶"
+      src="/images/scholar.jpeg">
+  <p class="site-author-name" itemprop="name">书生林丶</p>
+  <div class="site-description" itemprop="description">JAVA/WEB/大数据/笔录</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/lzhlin" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;lzhlin" rel="noopener" target="_blank"><i class="fab fa-github fa-fw" style="font-size:20px;" ></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:353895832@qq.com" title="E-Mail → mailto:353895832@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw" style="font-size:20px;" ></i></a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">书生林丶</span>
+</div>
+  <div class="powered-by"> <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
